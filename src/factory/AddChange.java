@@ -30,12 +30,12 @@ public class AddChange extends DatabaseFactory {
         this.printOutput = printOutput;
         this.output = output;
         this.users = users;
-        observers = new ArrayList<Observer>();
+        observers = new ArrayList<>();
     }
 
     /**
      * <p>
-        method that adds a new movie to the list of movies and informs the users that have
+     method that adds a new movie to the list of movies and informs the users that have
      a subscription at one of the genres from the added movie, that a new movie appeared in
      the database, through Observer Pattern
      */

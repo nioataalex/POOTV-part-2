@@ -27,6 +27,7 @@ public class SeeDetails {
 
     /**
      * <p>
+     * getter for actions
      */
     public Actions getActions() {
         return actions;
@@ -34,6 +35,8 @@ public class SeeDetails {
 
     /**
      * <p>
+     *  setter for actions
+     * @param actions actions from input
      */
     public void setActions(final Actions actions) {
         this.actions = actions;
@@ -41,6 +44,7 @@ public class SeeDetails {
 
     /**
      * <p>
+     *  getter for current user
      */
     public User getCurrentUser() {
         return currentUser;
@@ -49,6 +53,8 @@ public class SeeDetails {
 
     /**
      * <p>
+     * setter for current user
+     * @param currentUser current user
      */
     public void setCurrentUser(final User currentUser) {
         this.currentUser = currentUser;
@@ -56,6 +62,7 @@ public class SeeDetails {
 
     /**
      * <p>
+     * getter for printOutput
      */
     public Output getprintOutput() {
         return printOutput;
@@ -63,6 +70,7 @@ public class SeeDetails {
 
     /**
      * <p>
+     * getter for output
      */
     public ArrayNode getOutput() {
         return output;
@@ -70,6 +78,8 @@ public class SeeDetails {
 
     /**
      * <p>
+     * setter for output
+     * @param output arrayNode
      */
     public void setOutput(final ArrayNode output) {
         this.output = output;
@@ -77,6 +87,7 @@ public class SeeDetails {
 
     /**
      * <p>
+     *  getter for succesfulAction
      */
     public Stack<String> getSuccesfulAction() {
         return succesfulAction;
@@ -84,6 +95,8 @@ public class SeeDetails {
 
     /**
      * <p>
+     * setter for succesfulAction
+     * @param succesfulAction stack where all the succesfull pages are keeped
      */
     public void setSuccesfulAction(final Stack<String> succesfulAction) {
         this.succesfulAction = succesfulAction;

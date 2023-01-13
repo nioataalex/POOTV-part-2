@@ -32,7 +32,7 @@ public class DeleteChange extends DatabaseFactory {
 
     /**
      * <p>
-     *     method that verify if the movie of choice exits in the database, it if is
+     *     method that verify if the movie of choice exists in the database, it if is
      *     it will be removed from the databases, if not an error will appear
      *     if the user is premium he will receive a free premium movie, if he is standard he will be
      *     given 2 tokens back

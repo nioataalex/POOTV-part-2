@@ -131,9 +131,9 @@ public final class Recommendation {
     /**
      * <p>
      * method where the user will receive a notification with a recommendation
-     * if it was found or suggestive message if not
+     * if it was found, or suggestive message if not
      * @param currentUser current User
-     *@param printOutput Output class that is used for
+     * @param printOutput Output class that is used for
      *          printing information
      * @param output arrayNode where the answer is exported
      */

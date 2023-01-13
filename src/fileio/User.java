@@ -165,7 +165,7 @@ public final class User implements Observer {
 
     /**
      * <p>
-     * adds new notification to the list of an user notifications'
+     * adds new notification to the list of an user's notifications
      * @param newNotification new notification
      */
     @Override

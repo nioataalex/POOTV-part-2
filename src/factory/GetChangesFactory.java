@@ -54,6 +54,6 @@ public class GetChangesFactory {
         } else if (type.equals("delete")) {
             return new DeleteChange(movies, deletedMovie, users, printOutput, output);
         }
-        throw new IllegalArgumentException("The pizza type " + type + " is not recognized.");
+        throw new IllegalArgumentException("The action type " + type + " is not recognized.");
     }
 }

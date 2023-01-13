@@ -57,7 +57,7 @@ public class Homepage {
 
     /**
      * <p>
-     * method that initalizes a new stack consisting of consisting
+     * method that initalizes a new stack consisting
      * of pages that the user will navigate successfully
      */
     public Stack<String> newStack() {

@@ -54,7 +54,7 @@ public class Like extends SeeDetails implements Strategy {
 
     /**
      * <p>
-     method that changes the number of likes on every list of movies that
+     * method that changes the number of likes on every list of movies that
      * the current user has
      * @param currentUser current user
      * @param name name of the movie
