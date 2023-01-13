@@ -26,6 +26,9 @@ public class Watch extends SeeDetails implements Strategy {
 
     /**
      * <p>
+     * method that checks some corner cases, if something
+     * is wrong an error will appear, if not the watch
+     * action can be made
      * method where the user watched a movie, which will be added
      * to his watched movie lists
      */

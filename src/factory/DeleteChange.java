@@ -32,6 +32,11 @@ public class DeleteChange extends DatabaseFactory {
 
     /**
      * <p>
+     *     method that verify if the movie of choice exits in the database, it if is
+     *     it will be removed from the databases, if not an error will appear
+     *     if the user is premium he will receive a free premium movie, if he is standard he will be
+     *     given 2 tokens back
+     *     informs all users that a movie is removed through Observer Pattern
      */
 
     @Override
@@ -85,13 +90,16 @@ public class DeleteChange extends DatabaseFactory {
                     updates.register(user);
                 }
 
-                updates.notification(newNotification);
+                updates.notifyUsers(newNotification);
             }
         }
     }
 
     /**
      * <p>
+     * method that deletes a movie with a given name from a list of movies
+     * @param movies list of movies
+     * @param name name of the movie that will be removed
      */
 
     public void deleteMovie(final ArrayList<MovieCredentials> movies, final String name) {

@@ -31,7 +31,7 @@ public class Homepage {
 
     /**
      * <p>
-
+     * method used to add a new user to the database of users
      */
     public User getUser() {
         UserCredentials credentials = action.getCredentials();
@@ -57,7 +57,8 @@ public class Homepage {
 
     /**
      * <p>
-
+     * method that initalizes a new stack consisting of consisting
+     * of pages that the user will navigate successfully
      */
     public Stack<String> newStack() {
         Stack<String> succesfulAction = new Stack<>();

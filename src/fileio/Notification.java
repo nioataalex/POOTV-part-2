@@ -20,4 +20,12 @@ public final class Notification {
     public void setMovieName(final String movieName) {
         this.movieName = movieName;
     }
+
+    @Override
+    public String toString() {
+        return "Notification{" +
+                "movieName='" + movieName + '\'' +
+                ", message='" + message + '\'' +
+                '}';
+    }
 }

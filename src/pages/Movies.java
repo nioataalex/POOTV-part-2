@@ -38,7 +38,14 @@ public final class Movies {
 
     /**
      * <p>
-
+     * method that checks different cornes cases and prints
+     * the movies that meets the necessary conditions
+     * or errors if the conditions are not fulfilled
+     * @param movies list of movies from the platform
+     * @param currentUser current user
+     * @param printOutput Output class that is used for
+     *                    printing information
+     * @param output arrayNode where the answer is exported
      */
 
     public void action(final User currentUser,

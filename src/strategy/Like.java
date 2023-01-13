@@ -31,7 +31,9 @@ public class Like extends SeeDetails implements Strategy {
 
     /**
      * <p>
-
+     * method that checks some corner cases, if something
+     * is wrong an error will appear, if not the like
+     * action can be made
      */
     @Override
     public void action() {
@@ -52,7 +54,10 @@ public class Like extends SeeDetails implements Strategy {
 
     /**
      * <p>
-
+     method that changes the number of likes on every list of movies that
+     * the current user has
+     * @param currentUser current user
+     * @param name name of the movie
      */
     public void changesMovies(final User currentUser, final String name) {
         changeNumLikes(currentUser.getPurchasedMovies(), name);

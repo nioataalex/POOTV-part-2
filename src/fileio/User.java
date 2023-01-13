@@ -163,6 +163,11 @@ public final class User implements Observer {
                 + '}';
     }
 
+    /**
+     * <p>
+     * adds new notification to the list of an user notifications'
+     * @param newNotification new notification
+     */
     @Override
     public void update(final Notification newNotification) {
         if (getNotifications() == null) {

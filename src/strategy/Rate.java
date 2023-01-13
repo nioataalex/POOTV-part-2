@@ -42,7 +42,9 @@ public class Rate extends SeeDetails implements Strategy {
 
     /**
      * <p>
-
+     * method that checks some corner cases, if something
+     * is wrong an error will appear, if not the rate
+     * action can be made
      */
     @Override
     public void action() {
@@ -61,7 +63,12 @@ public class Rate extends SeeDetails implements Strategy {
 
     /**
      * <p>
-
+     * method that changes the rate to a new one on every list of movies that
+     * the current user has
+     * @param currentUser current user
+     * @param name name of the movie
+     * @param newRate rate that will be added
+     * @param sameNumRated boolean used to see if the movie was rated before by the user
      */
     public void changesMovies(final User currentUser, final String name,
                               final double newRate, final boolean sameNumRated) {

@@ -34,7 +34,11 @@ public class Subscribe implements Strategy {
 
     /**
      * <p>
-
+     *  method that checks if a given genre can be subscribed by the user
+     *  if everything is okay, it will be added to a list of subscribed genres,
+     *  if not an error will appear
+     * @param  subscribedGenre user will subscribe to this genre
+     * @param currentUser current user
      */
 
     public void addSubscription(final String subscribedGenre, final User currentUser) {
@@ -66,7 +70,9 @@ public class Subscribe implements Strategy {
 
     /**
      * <p>
-
+     * method that checks some corner cases, if something
+     * is wrong an error will appear, if not the subscribe
+     * action can be made
      */
     @Override
     public void action() {

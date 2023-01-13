@@ -36,7 +36,9 @@ public final class Recommendation {
 
     /**
      * <p>
-
+     * method that creates a list of liked genres and sorts them by
+     * name and number of likes
+     * @param currentUser current User
      */
     public ArrayList<LikedGenres> likedGenres(final User currentUser) {
         ArrayList<LikedGenres> genres = new ArrayList<>();
@@ -86,7 +88,8 @@ public final class Recommendation {
 
     /**
      * <p>
-
+     * method that finds the name of the movie that will be recommended
+     * @param currentUser current User
      */
     public String recommendedMovie(final User currentUser) {
 
@@ -127,9 +130,13 @@ public final class Recommendation {
 
     /**
      * <p>
-
+     * method where the user will receive a notification with a recommendation
+     * if it was found or suggestive message if not
+     * @param currentUser current User
+     *@param printOutput Output class that is used for
+     *          printing information
+     * @param output arrayNode where the answer is exported
      */
-
     public void action(final User currentUser, final ArrayNode output,
                        final Output printOutput) {
         Notification newNotification =  new Notification();
@@ -146,7 +153,7 @@ public final class Recommendation {
 
         updates.register(currentUser);
 
-        updates.notification(newNotification);
+        updates.notifyUsers(newNotification);
         printOutput.notifyOutput(output, currentUser);
     }
 

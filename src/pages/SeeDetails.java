@@ -109,6 +109,9 @@ public class SeeDetails {
 
     /**
      * <p>
+     *  method that checks different cornes cases and prints
+     *  the movie that is given from the input
+     *  or errors if something is wrong
      */
     public void action() {
         if (currentUser.getSeenMovie() != null) {

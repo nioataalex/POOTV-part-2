@@ -20,10 +20,6 @@ import java.util.Stack;
 public class Main {
 
     private static int fifteen = 15;
-    /**
-     * <p>
-
-     */
 
     public static void main(final String[] args)
             throws IOException {

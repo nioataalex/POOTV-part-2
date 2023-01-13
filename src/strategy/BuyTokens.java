@@ -15,7 +15,7 @@ public class BuyTokens implements Strategy {
 
     /**
      * <p>
-
+     * method used to buy tokens and to change the current balance
      */
     @Override
     public void action() {

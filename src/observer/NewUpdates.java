@@ -16,38 +16,42 @@ public class NewUpdates implements Subject {
 
     /**
      * <p>
-
+     *  adds a new observer to a list of observers
+     * @param observer observer
      */
     @Override
-    public void register(final Observer o) {
-        observers.add(o);
+    public void register(final Observer observer) {
+        observers.add(observer);
     }
 
     /**
      * <p>
-
+     * deletes an observer from the list of observers
+     * @param observer observer
      */
     @Override
-    public void unregister(final Observer o) {
-        observers.remove(o);
+    public void unregister(final Observer observer) {
+        observers.remove(observer);
     }
 
     /**
      * <p>
-
+     * informs all observers that a new notification appeared
+     * @param newNotification new notification
      */
     @Override
     public void notifyAllObservers(final Notification newNotification) {
-        for (Observer follower : observers) {
-            follower.update(newNotification);
+        for (Observer observer : observers) {
+            observer.update(newNotification);
         }
     }
 
     /**
      * <p>
-
+     * appeals notifyAllObservers method, so every user will be informed about the new changes
+     * @param newNotification new notification
      */
-    public void notification(final Notification newNotification) {
+    public void notifyUsers(final Notification newNotification) {
         notifyAllObservers(newNotification);
     }
 }

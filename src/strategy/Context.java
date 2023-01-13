@@ -10,7 +10,8 @@ public class Context {
 
     /**
      * <p>
-
+     * method used to execute actions
+     * Strategy Pattern
      */
     public void executeStrategy() {
         strategy.action();

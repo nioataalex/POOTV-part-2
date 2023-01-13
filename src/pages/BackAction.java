@@ -24,7 +24,8 @@ public class BackAction {
 
     /**
      * <p>
-
+     * method that helps the current user to go back to the page that he was on before
+     * the current page
      */
     public void action() {
         if (succesfulAction.isEmpty()) {

@@ -42,7 +42,10 @@ public class GetChangesFactory {
 
     /**
      * <p>
-
+     * method that decides what type of action will be made on the database
+     * of movies
+     * Factory Pattern
+     * @param type the type of action add or remove
      */
 
     public DatabaseFactory createDatabase(final String type) {

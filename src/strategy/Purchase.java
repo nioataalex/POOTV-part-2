@@ -25,7 +25,9 @@ public class Purchase extends SeeDetails implements Strategy {
 
     /**
      * <p>
-
+     * method that checks some corner cases, if something
+     * is wrong an error will appear, if not the purchase
+     * action can be made
      */
     @Override
     public void action() {

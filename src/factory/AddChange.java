@@ -35,10 +35,10 @@ public class AddChange extends DatabaseFactory {
 
     /**
      * <p>
-
+        method that adds a new movie to the list of movies and informs the users that have
+     a subscription at one of the genres from the added movie, that a new movie appeared in
+     the database, through Observer Pattern
      */
-
-
     @Override
     public void action() {
         for (MovieCredentials movie : movies) {
@@ -74,7 +74,7 @@ public class AddChange extends DatabaseFactory {
                 for (User user : users) {
                     updates.register(user);
                 }
-                updates.notification(newNotification);
+                updates.notifyUsers(newNotification);
             }
         }
     }

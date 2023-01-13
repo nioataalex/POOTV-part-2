@@ -13,7 +13,7 @@ public class BuyPremiumAccount implements Strategy {
 
     /**
      * <p>
-
+     * method used to buy a premium account by a standard user
      */
     @Override
     public void action() {

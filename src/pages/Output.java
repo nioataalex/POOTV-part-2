@@ -131,7 +131,8 @@ public final class Output {
 
     /**
      * <p>
-     * puts in an object node the user's credentials
+     *  adds in an array node every notification from the list that is given
+     * @param notifications list of notifications received by a user
      */
     public ArrayNode currentNotifications(final ArrayList<Notification> notifications) {
         ObjectMapper mapper = new ObjectMapper();
@@ -176,8 +177,10 @@ public final class Output {
 
     /**
      * <p>
-     * puts in an object node the user's credentials
-
+     * output used to print the user's information at the end of
+     * the program
+     * @param output arrayNode where the answer is exported
+     * @param user current user
      */
     public void notifyOutput(final ArrayNode output, final User user) {
         ObjectMapper mapper = new ObjectMapper();
